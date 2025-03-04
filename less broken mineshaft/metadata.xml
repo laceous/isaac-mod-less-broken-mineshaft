@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <name>Less Broken Mineshaft</name>
+    <directory>less broken mineshaft</directory>
+    <id>3438499860</id>
+    <description>Walking down the mineshaft to get to Knife Piece 2 is boring. Now, you can ride the minecart all the way in. You'll still have to fight your way out.
+
+Note: you can skip the minecart ride by bombing your way in.
+
+Support for the following mods has been added:
+[list]
+    [*]Fall from Grace (Grotto)
+    [*]Fiend Folio Reheated (mineshaft rooms)
+[/list]
+
+Other mods that add mineshaft rooms that don't have direct support right now (e.g. Rooms Galore) shouldn't cause any issues. Those rooms will be skipped.
+
+This mod requires REPENTOGON.</description>
+    <version>1.1</version>
+    <visibility>Public</visibility>
+    <tag id="Lua"/>
+    <tag id="Rooms"/>
+    <tag id="Tweaks"/>
+</metadata>
