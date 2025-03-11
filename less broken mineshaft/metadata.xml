@@ -17,7 +17,7 @@ Support for the following mods has been added:
 Other mods that add mineshaft rooms that don't have direct support right now shouldn't cause any issues. Those rooms will be skipped.
 
 This mod requires REPENTOGON.</description>
-    <version>1.2</version>
+    <version>1.3</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Rooms"/>

@@ -678,9 +678,12 @@ if REPENTOGON then
         elseif mod:isMineshaftRoom() then
           mod.minecartInPrevRoom = true
           if sprite:GetFrame() < mod.minecartEnterFrame then
-            sprite:SetFrame(mod.minecartEnterFrame) -- SetLastFrame skips a trigger
+            -- SetLastFrame skips a trigger, player turns invisible, camera doesn't follow cart
+            sprite:SetFrame(mod.minecartEnterFrame)
           end
         end
+      elseif mod.minecartInPrevRoom and sprite:IsPlaying('WalkDown') and mod:isMineshaftRoom() then
+        sprite:Stop() -- fix phantom walk in minecart in mineshaft
       end
     end
   end
