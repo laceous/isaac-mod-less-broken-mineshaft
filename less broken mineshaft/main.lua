@@ -581,6 +581,7 @@ if REPENTOGON then
         end
         
         for _, player in ipairs(PlayerManager.GetPlayers()) do
+          player.ControlsEnabled = false -- stop first shot in room
           player.Position = cartPosition -- player:SetHeadDirection
         end
         
@@ -613,6 +614,7 @@ if REPENTOGON then
         cart.V2 = Vector(0.2, 0)
         
         for _, player in ipairs(PlayerManager.GetPlayers()) do
+          player.ControlsEnabled = false
           player.Position = cartPosition
         end
       end
