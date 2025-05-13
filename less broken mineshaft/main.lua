@@ -1,7 +1,9 @@
 local mod = RegisterMod('Less Broken Mineshaft', 1)
+local json = require('json')
 local game = Game()
 
 if REPENTOGON then
+  mod.onGameStartHasRun = false
   mod.minecartInPrevRoom = false
   mod.mineshaftRoomPreview = false
   mod.minecartEnterFrame = 15 -- default
@@ -525,24 +527,50 @@ if REPENTOGON then
     end
   end
   
+  mod.speeds = { 'normal', 'fast', 'faster' }
+  
+  mod.state = {}
+  mod.state.speed = 'normal'
+  
   function mod:onGameStart()
-    local frame = mod:getMinecartEnterFrame()
-    if frame then
-      mod.minecartEnterFrame = frame
+    if mod:HasData() then
+      local _, state = pcall(json.decode, mod:LoadData())
+      
+      if type(state) == 'table' then
+        if type(state.speed) == 'string' and mod:getSpeedsIdx(state.speed) > 0 then
+          mod.state.speed = state.speed
+        end
+      end
     end
+    
+    mod.minecartEnterFrame = mod:getMinecartEnterFrame()
+    mod.onGameStartHasRun = true
+    mod:onNewRoom()
   end
   
   function mod:onGameExit()
+    mod:save()
+    mod.onGameStartHasRun = false
     mod.minecartInPrevRoom = false
     mod.mineshaftRoomPreview = false
   end
   
+  function mod:save()
+    mod:SaveData(json.encode(mod.state))
+  end
+  
   function mod:onNewRoom()
+    if not mod.onGameStartHasRun then
+      return
+    end
+    
     local level = game:GetLevel()
     local room = level:GetCurrentRoom()
     local roomDesc = level:GetCurrentRoomDesc()
     
-    if mod:isMineshaftRoom() and mod.minecartInPrevRoom then
+    if mod:isSecretEntrance() then
+      mod:updateMinecartSpeed()
+    elseif mod:isMineshaftRoom() and mod.minecartInPrevRoom then
       local roomData = mod.roomData[roomDesc.Data.Variant] -- OriginalVariant
       if roomData then
         mod:addRails(roomData)
@@ -561,7 +589,7 @@ if REPENTOGON then
         
         -- faster starting speed
         -- approximate continuing to get faster through multiple rooms
-        local baseSpeed = 0.2
+        local baseSpeed = mod:getSpeedFromString(mod.state.speed)
         if roomDesc.GridIndex == 162 then
           cart.V2 = Vector(2 * baseSpeed, 0)
         elseif roomDesc.GridIndex == 136 then
@@ -611,7 +639,7 @@ if REPENTOGON then
           cart.I1 = 4
         end
         cart.I2 = roomData.cart
-        cart.V2 = Vector(0.2, 0)
+        cart.V2 = Vector(mod:getSpeedFromString(mod.state.speed), 0)
         
         for _, player in ipairs(PlayerManager.GetPlayers()) do
           player.ControlsEnabled = false
@@ -727,6 +755,12 @@ if REPENTOGON then
   
   Console.RegisterCommand('less-broken-mineshaft', 'Wrapper for goto, use with d.xxxxx', 'Wrapper for goto, use with d.xxxxx', false, AutocompleteType.GOTO)
   
+  function mod:updateMinecartSpeed()
+    for _, v in ipairs(Isaac.FindByType(EntityType.ENTITY_MINECART, 10, -1, false, false)) do
+      v:ToNPC().V2 = Vector(mod:getSpeedFromString(mod.state.speed), 0)
+    end
+  end
+  
   function mod:addRails(roomData)
     local room = game:GetRoom()
     
@@ -783,6 +817,28 @@ if REPENTOGON then
         return i - 1 -- 15
       end
     end
+    
+    return -1
+  end
+  
+  function mod:getSpeedsIdx(speed)
+    for i, v in ipairs(mod.speeds) do
+      if v == speed then
+        return i
+      end
+    end
+    
+    return 0
+  end
+  
+  function mod:getSpeedFromString(speed)
+    if speed == 'fast' then
+      return 2.0
+    elseif speed == 'faster' then
+      return 20.0
+    end
+    
+    return 0.2 -- normal
   end
   
   -- otherwise fall from grace removes the minecart we spawn
@@ -865,6 +921,38 @@ if REPENTOGON then
            room:IsFirstVisit()
   end
   
+  -- start ModConfigMenu --
+  function mod:setupModConfigMenu()
+    local category = 'Less Broken Mines'
+    for _, v in ipairs({ 'Settings' }) do
+      ModConfigMenu.RemoveSubcategory(category, v)
+    end
+    ModConfigMenu.AddSetting(
+      category,
+      'Settings',
+      {
+        Type = ModConfigMenu.OptionType.NUMBER,
+        CurrentSetting = function()
+          return mod:getSpeedsIdx(mod.state.speed)
+        end,
+        Minimum = 1,
+        Maximum = #mod.speeds,
+        Display = function()
+          return 'Minecart speed: ' .. mod.state.speed
+        end,
+        OnChange = function(n)
+          mod.state.speed = mod.speeds[n]
+          if mod:isSecretEntrance() then
+            mod:updateMinecartSpeed()
+          end
+          mod:save()
+        end,
+        Info = { 'Default: normal' }
+      }
+    )
+  end
+  -- end ModConfigMenu --
+  
   mod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, mod.onGameStart)
   mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, mod.onGameExit)
   mod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, mod.onNewRoom)
@@ -873,4 +961,8 @@ if REPENTOGON then
   mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.onPlayerUpdate, PlayerVariant.PLAYER)
   mod:AddCallback(ModCallbacks.MC_PRE_NPC_UPDATE, mod.onPreNpcUpdate, EntityType.ENTITY_MINECART)
   mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.onExecuteCmd)
+  
+  if ModConfigMenu then
+    mod:setupModConfigMenu()
+  end
 end
