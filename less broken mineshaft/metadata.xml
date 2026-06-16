@@ -19,7 +19,7 @@ Other mods that add mineshaft rooms that don't have direct support right now sho
 This mod requires REPENTOGON.
 
 Update: Use Mod Config Menu to set the minecart speed.</description>
-    <version>1.5</version>
+    <version>1.6</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Rooms"/>

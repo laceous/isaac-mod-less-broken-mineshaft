@@ -617,7 +617,7 @@ if REPENTOGON then
           local door = room:GetDoor(i)
           if door then
             local sprite = door:GetSprite()
-            if sprite:GetFilename() == 'gfx/grid/Door_01_NormalDoor.anm2' then
+            if string.lower(sprite:GetFilename()) == 'gfx/grid/door_01_normaldoor.anm2' then
               sprite:Load('gfx/grid/door_mines_mineshaft_dark.anm2', true)
             end
           end
