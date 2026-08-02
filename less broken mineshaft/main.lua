@@ -680,7 +680,8 @@ if REPENTOGON then
   
   -- attempt to place mineshaft rooms that we have rail data for
   function mod:onPreLevelPlaceRoom(slot, roomConfig, seed)
-    if roomConfig.StageID == StbType.MINES and
+    if slot and roomConfig and seed and
+       roomConfig.StageID == StbType.MINES and
        roomConfig.Type == RoomType.ROOM_DEFAULT and
        (roomConfig.Subtype == RoomSubType.MINESHAFT_LOBBY or roomConfig.Subtype == RoomSubType.MINESHAFT_ROOM)
     then
