@@ -10,7 +10,7 @@ Note: you can skip the minecart ride by bombing your way in.
 Support for the following mods has been added:
 [list]
     [*]Fall from Grace (Grotto)
-    [*]Fiend Folio Reheated (mineshaft rooms)
+    [*]Fiend Folio Reheated / Reloaded (mineshaft rooms)
     [*]Rooms Galore / Fiendish Edition (mineshaft rooms)
 [/list]
 
@@ -19,7 +19,7 @@ Other mods that add mineshaft rooms that don't have direct support right now sho
 This mod requires REPENTOGON.
 
 Update: Use Mod Config Menu to set the minecart speed.</description>
-    <version>1.7</version>
+    <version>1.8</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Rooms"/>
