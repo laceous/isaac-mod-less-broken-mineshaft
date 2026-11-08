@@ -11,15 +11,15 @@ Support for the following mods has been added:
 [list]
     [*]Fall from Grace (Grotto)
     [*]Fiend Folio Reheated / Reloaded (mineshaft rooms)
-    [*]Rooms Galore / Fiendish Edition (mineshaft rooms)
+    [*]Rooms Galore / Fiendish / Definitive (mineshaft rooms)
 [/list]
 
-Other mods that add mineshaft rooms that don't have direct support right now shouldn't cause any issues. Those rooms will be skipped.
+Other mods that add mineshaft rooms that don't have direct support right now shouldn't cause any issues. Those rooms will be skipped. (Update: There's an option to disable support for modded rooms. This might be necessary if this mod's data isn't in sync with an update from another mod. You may need to restart the floor after changing this setting.)
 
 This mod requires REPENTOGON.
 
 Update: Use Mod Config Menu to set the minecart speed.</description>
-    <version>1.11</version>
+    <version>1.12</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Rooms"/>

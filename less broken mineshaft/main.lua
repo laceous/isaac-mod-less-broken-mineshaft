@@ -304,237 +304,12 @@ if REPENTOGON then
       [StbRailVariant.UP_TO_RIGHT]  = { 37 },
       cart = 61,
     },
-    -- fiend folio reheated (175xx/176xx/19xxx)
-    -- fiend folio reloaded (177xx/178xx/179xx/20xxx)
-    [17649] = {
-      [StbRailVariant.VERTICAL]      = { 112, 78, 63, 48, 22 },
-      [StbRailVariant.HORIZONTAL]    = { 96, 95, 94, 34, 35, 36 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 97 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 33 },
-      [StbRailVariant.UP_TO_LEFT]    = { 37 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 93 },
-      cart = 112,
-    },
-    [17651] = {
-      [StbRailVariant.VERTICAL]      = { 112, 85, 70, 37, 22 },
-      [StbRailVariant.HORIZONTAL]    = { 98, 99, 54, 53 },
-      [StbRailVariant.CROSSROAD]     = { 55 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 41 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 97, 40 },
-      [StbRailVariant.UP_TO_LEFT]    = { 100, 56 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 52 },
-      cart = 112,
-    },
-    [17500] = {
-      [StbRailVariant.VERTICAL]  = { 217, 202, 187, 157, 142, 127, 112, 97, 82, 52, 37, 22 },
-      [StbRailVariant.CROSSROAD] = { 172, 67 },
-      cart = 217,
-    },
-    [17502] = {
-      [StbRailVariant.VERTICAL]     = { 412, 354, 326, 298, 270, 242, 214, 186, 158, 130, 102, 35 },
-      [StbRailVariant.HORIZONTAL]   = { 383, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 384, 74 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 382, 63 },
-      cart = 412,
-    },
-    [17506] = {
-      [StbRailVariant.VERTICAL]      = { 399, 371, 314, 256, 228, 200, 146, 93, 102, 130, 158, 235, 329, 301, 273, 245, 217, 162, 134, 106, 108 },
-      [StbRailVariant.HORIZONTAL]    = { 285, 173, 119, 120, 66, 67, 68, 69, 70, 71, 72, 73, 185, 184, 183, 182, 181, 293, 323, 324, 325, 355, 356, 79, 137, 138 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 343, 286, 74, 264, 294, 326, 80 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 172, 118, 65, 180, 207, 189, 78 },
-      [StbRailVariant.UP_TO_LEFT]    = { 174, 121, 186, 208, 357, 190 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 342, 284, 263, 292, 322, 354, 136 },
-      cart = 399,
-    },
-    [17510] = {
-      [StbRailVariant.VERTICAL]     = { 76, 91, 103, 88, 73, 58, 43 },
-      [StbRailVariant.HORIZONTAL]   = { 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 27, 26, 25, 24, 23 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 61, 28 },
-      [StbRailVariant.UP_TO_LEFT]   = { 118 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 106, 22 },
-      cart = 61,
-    },
-    [17664] = {
-      [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 259, 231, 203, 175, 147, 119, 122, 182, 210, 269, 276, 248, 220, 192, 164 },
-      [StbRailVariant.HORIZONTAL]    = { 92, 93, 151, 152, 153, 239, 240, 298, 299, 300, 301, 302, 303, 137, 138 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 94, 154, 241 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 91, 136 },
-      [StbRailVariant.UP_TO_LEFT]    = { 304 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 150, 238, 297 },
-      cart = 399,
-    },
-    [17666] = {
-      [StbRailVariant.VERTICAL]      = { 399, 371, 316, 288, 260, 188 },
-      [StbRailVariant.HORIZONTAL]    = { 233, 234, 235, 236, 237, 238, 239, 213, 214, 215, 134, 135, 136, 137, 138 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 343, 232, 212, 160, 133 },
-      [StbRailVariant.UP_TO_LEFT]    = { 344, 240, 216, 161 },
-      cart = 399,
-    },
-    [17668] = {
-      [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 247, 219, 191, 163 },
-      [StbRailVariant.HORIZONTAL]    = { 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 136, 137, 138 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 259, 135 },
-      [StbRailVariant.UP_TO_LEFT]    = { 275 },
-      cart = 399,
-    },
-    [17660] = {
-      [StbRailVariant.VERTICAL]      = { 412, 384, 323, 295, 267, 239, 211, 183, 155, 150, 178, 206, 234, 229, 201, 173, 145, 117, 89, 35 },
-      [StbRailVariant.HORIZONTAL]    = { 355, 354, 353, 352, 126, 125, 124, 123, 261, 260, 259, 258, 62 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 356, 127 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 122, 61 },
-      [StbRailVariant.UP_TO_LEFT]    = { 262, 63 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 351, 257 },
-      cart = 412,
-    },
-    [17674] = {
-      [StbRailVariant.VERTICAL]      = { 46, 31 },
-      [StbRailVariant.HORIZONTAL]    = { 17, 18, 19, 20, 21 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 16 },
-      [StbRailVariant.UP_TO_LEFT]    = { 61, 22 },
-      cart = 61,
-    },
-    [19692] = {
-      [StbRailVariant.VERTICAL]      = { 200, 185, 170, 155, 129, 114, 80, 65, 37, 22 },
-      [StbRailVariant.HORIZONTAL]    = { 216, 141, 142, 143, 98, 97, 96, 51 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 217, 99 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 140, 50 },
-      [StbRailVariant.UP_TO_LEFT]    = { 144, 52 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 215, 95 },
-      cart = 217,
-    },
-    [19694] = {
-      [StbRailVariant.VERTICAL]      = { 412, 384, 356, 328, 300, 290, 318, 317, 289, 261, 233, 205, 177, 149, 121, 63, 35 },
-      [StbRailVariant.HORIZONTAL]    = { 271, 270, 269, 268, 267, 266, 265, 264, 263, 92 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 272, 93 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 262 },
-      [StbRailVariant.UP_TO_LEFT]    = { 346 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 345, 91 },
-      cart = 412,
-    },
-    [19698] = {
-      [StbRailVariant.VERTICAL]      = { 399, 350, 322, 294, 266, 238, 188, 160 },
-      [StbRailVariant.HORIZONTAL]    = { 372, 373, 374, 375, 376, 377, 211, 212, 213, 214, 215, 133, 134, 135, 136, 137, 138 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 371, 210, 132 },
-      [StbRailVariant.UP_TO_LEFT]    = { 378, 216 },
-      cart = 399,
-    },
-    -- rooms galore (8xxx)
-    [8278] = {
-      [StbRailVariant.VERTICAL]  = { 112, 97, 82, 52, 37, 22 },
-      [StbRailVariant.CROSSROAD] = { 67 },
-      cart = 112,
-    },
-    [8284] = {
-      [StbRailVariant.VERTICAL]     = { 412, 351, 323, 295, 267, 239, 211, 147, 119, 91, 63, 35 },
-      [StbRailVariant.HORIZONTAL]   = { 383, 382, 381, 380, 182, 181, 180, 179, 178, 177, 176 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 384, 183 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 379, 175 },
-      cart = 412,
-    },
-    [8286] = {
-      [StbRailVariant.VERTICAL]      = { 112, 85, 70, 55, 22 },
-      [StbRailVariant.HORIZONTAL]    = { 98, 99, 39, 38 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 40 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 97 },
-      [StbRailVariant.UP_TO_LEFT]    = { 100 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 37 },
-      cart = 112,
-    },
-    [8288] = {
-      [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 293, 321, 328, 300, 272, 244, 216, 188 },
-      [StbRailVariant.HORIZONTAL]    = { 260, 261, 262, 263, 264, 350, 351, 352, 353, 354, 355, 161, 162, 163, 137, 138 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 265 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 259, 160, 136 },
-      [StbRailVariant.UP_TO_LEFT]    = { 356, 164 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 349 },
-      cart = 399,
-    },
-    [8294] = {
-      [StbRailVariant.VERTICAL]      = { 412, 357, 329, 301, 237, 209, 151, 123, 63, 35 },
-      [StbRailVariant.HORIZONTAL]    = { 272, 271, 270, 269, 268, 267, 266, 180, 94, 93, 92 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 273, 181, 95 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 384 },
-      [StbRailVariant.UP_TO_LEFT]    = { 385 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 265, 179, 91 },
-      cart = 412,
-    },
-    [8296] = {
-      [StbRailVariant.VERTICAL]      = { 399, 359, 331, 303, 275, 247, 219, 191, 163, 135, 107, 110 },
-      [StbRailVariant.HORIZONTAL]    = { 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 80, 81 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 82 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 371, 79 },
-      [StbRailVariant.UP_TO_LEFT]    = { 387 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 138 },
-      cart = 399,
-    },
-    [8300] = {
-      [StbRailVariant.VERTICAL]   = { 52, 37, 22 },
-      [StbRailVariant.HORIZONTAL] = { 61, 62, 64, 65, 66 },
-      [StbRailVariant.CROSSROAD]  = { 63 },
-      [StbRailVariant.UP_TO_LEFT] = { 67 },
-      cart = 61,
-    },
-    [8304] = {
-      [StbRailVariant.HORIZONTAL]    = { 113, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 138 },
-      [StbRailVariant.DOWN_TO_LEFT]  = { 109 },
-      [StbRailVariant.DOWN_TO_RIGHT] = { 86 },
-      [StbRailVariant.UP_TO_LEFT]    = { 114 },
-      [StbRailVariant.UP_TO_RIGHT]   = { 137 },
-      cart = 113,
-    },
-    [8306] = {
-      [StbRailVariant.VERTICAL]     = { 54, 22 },
-      [StbRailVariant.HORIZONTAL]   = { 61, 62, 63, 64, 65, 66, 67, 68, 38 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 39 },
-      [StbRailVariant.UP_TO_LEFT]   = { 69 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 37 },
-      cart = 61,
-    },
-    [8308] = {
-      [StbRailVariant.VERTICAL]     = { 412, 384, 288, 260, 232, 204, 176, 148, 120, 92, 35 },
-      [StbRailVariant.HORIZONTAL]   = { 355, 325, 324, 323, 322, 321, 320, 319, 318, 317 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 356, 326, 64 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 354, 316, 63 },
-      cart = 412,
-    },
-    -- rooms galore fiendish edition (60xxx)
-    [60119] = {
-      [StbRailVariant.VERTICAL]     = { 55, 22 },
-      [StbRailVariant.HORIZONTAL]   = { 61, 62, 63, 64, 65, 66, 67, 68, 69, 39, 38 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 40 },
-      [StbRailVariant.UP_TO_LEFT]   = { 70 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 37 },
-      cart = 61,
-    },
-    [60123] = {
-      [StbRailVariant.VERTICAL]     = { 381, 353, 325, 265, 237, 179, 151, 91, 63, 35 },
-      [StbRailVariant.HORIZONTAL]   = { 411, 410, 296, 295, 294, 208, 122, 121, 120 },
-      [StbRailVariant.DOWN_TO_LEFT] = { 412, 297, 209, 123 },
-      [StbRailVariant.UP_TO_RIGHT]  = { 409, 293, 207, 119 },
-      cart = 412,
-    },
   }
   for k, v in pairs({
-                     [10010] = { 10012, 10015, 10016, 10017, 10124, 10126, 10128, 10130, 10132, 10140, 10142, 10144, 10146, 17647, 17648, 17650, 19691, 17504, 17662, 19696, 8276, 8277, 8292, 8298, 17886, 17887, 17889, 20451, 17803, 17901, 20456 },
-                     [10072] = { 10074, 10076, 10078, 10080, 10084, 10086, 10088, 10090, 10092, 10094, 10096, 10098, 17656, 17658, 8290, 8302, 17895, 17897 },
-                     [10100] = { 10102, 10104, 10106, 10108, 10110, 10112, 10114, 10116, 10118, 10120, 10122, 17508, 17670, 17672, 17807, 17913, 17915 },
+                     [10010] = { 10012, 10015, 10016, 10017, 10124, 10126, 10128, 10130, 10132, 10140, 10142, 10144, 10146 },
+                     [10072] = { 10074, 10076, 10078, 10080, 10084, 10086, 10088, 10090, 10092, 10094, 10096, 10098 },
+                     [10100] = { 10102, 10104, 10106, 10108, 10110, 10112, 10114, 10116, 10118, 10120, 10122 },
                      [10148] = { 10150, 10152, 10158, 10160, 10164, 10166 },
-                     [10156] = { 8282 },
-                     [8278]  = { 60121 },
-                     [17649] = { 17888 },
-                     [17651] = { 17890 },
-                     [17500] = { 17799 },
-                     [17502] = { 17801 },
-                     [17506] = { 17805 },
-                     [17510] = { 17809 },
-                     [17660] = { 17899 },
-                     [17664] = { 17903 },
-                     [17666] = { 17905, 17907, 17909 },
-                     [17668] = { 17911 },
-                     [17674] = { 17917 },
-                     [19692] = { 20452 },
-                     [19694] = { 20454 },
-                     [19698] = { 20458 },
                    })
   do
     for _, w in ipairs(v) do
@@ -546,6 +321,351 @@ if REPENTOGON then
   
   mod.state = {}
   mod.state.speed = 'normal'
+  mod.state.includeModdedRooms = true
+  
+  function mod:onModsLoaded()
+    -- fiend folio reheated (175xx/176xx/19xxx)
+    -- fiend folio reloaded (177xx/178xx/179xx/20xxx)
+    local fiendFolioRoomData = { -- reheated room ids
+      [17649] = {
+        [StbRailVariant.VERTICAL]      = { 112, 78, 63, 48, 22 },
+        [StbRailVariant.HORIZONTAL]    = { 96, 95, 94, 34, 35, 36 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 97 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 33 },
+        [StbRailVariant.UP_TO_LEFT]    = { 37 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 93 },
+        cart = 112,
+      },
+      [17651] = {
+        [StbRailVariant.VERTICAL]      = { 112, 85, 70, 37, 22 },
+        [StbRailVariant.HORIZONTAL]    = { 98, 99, 54, 53 },
+        [StbRailVariant.CROSSROAD]     = { 55 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 41 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 97, 40 },
+        [StbRailVariant.UP_TO_LEFT]    = { 100, 56 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 52 },
+        cart = 112,
+      },
+      [17500] = {
+        [StbRailVariant.VERTICAL]  = { 217, 202, 187, 157, 142, 127, 112, 97, 82, 52, 37, 22 },
+        [StbRailVariant.CROSSROAD] = { 172, 67 },
+        cart = 217,
+      },
+      [17502] = {
+        [StbRailVariant.VERTICAL]     = { 412, 354, 326, 298, 270, 242, 214, 186, 158, 130, 102, 35 },
+        [StbRailVariant.HORIZONTAL]   = { 383, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 384, 74 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 382, 63 },
+        cart = 412,
+      },
+      [17506] = {
+        [StbRailVariant.VERTICAL]      = { 399, 371, 314, 256, 228, 200, 146, 93, 102, 130, 158, 235, 329, 301, 273, 245, 217, 162, 134, 106, 108 },
+        [StbRailVariant.HORIZONTAL]    = { 285, 173, 119, 120, 66, 67, 68, 69, 70, 71, 72, 73, 185, 184, 183, 182, 181, 293, 323, 324, 325, 355, 356, 79, 137, 138 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 343, 286, 74, 264, 294, 326, 80 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 172, 118, 65, 180, 207, 189, 78 },
+        [StbRailVariant.UP_TO_LEFT]    = { 174, 121, 186, 208, 357, 190 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 342, 284, 263, 292, 322, 354, 136 },
+        cart = 399,
+      },
+      [17510] = {
+        [StbRailVariant.VERTICAL]     = { 76, 91, 103, 88, 73, 58, 43 },
+        [StbRailVariant.HORIZONTAL]   = { 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 27, 26, 25, 24, 23 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 61, 28 },
+        [StbRailVariant.UP_TO_LEFT]   = { 118 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 106, 22 },
+        cart = 61,
+      },
+      [17664] = {
+        [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 259, 231, 203, 175, 147, 119, 122, 182, 210, 269, 276, 248, 220, 192, 164 },
+        [StbRailVariant.HORIZONTAL]    = { 92, 93, 151, 152, 153, 239, 240, 298, 299, 300, 301, 302, 303, 137, 138 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 94, 154, 241 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 91, 136 },
+        [StbRailVariant.UP_TO_LEFT]    = { 304 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 150, 238, 297 },
+        cart = 399,
+      },
+      [17666] = {
+        [StbRailVariant.VERTICAL]      = { 399, 371, 316, 288, 260, 188 },
+        [StbRailVariant.HORIZONTAL]    = { 233, 234, 235, 236, 237, 238, 239, 213, 214, 215, 134, 135, 136, 137, 138 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 343, 232, 212, 160, 133 },
+        [StbRailVariant.UP_TO_LEFT]    = { 344, 240, 216, 161 },
+        cart = 399,
+      },
+      [17668] = {
+        [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 247, 219, 191, 163 },
+        [StbRailVariant.HORIZONTAL]    = { 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 136, 137, 138 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 259, 135 },
+        [StbRailVariant.UP_TO_LEFT]    = { 275 },
+        cart = 399,
+      },
+      [17660] = {
+        [StbRailVariant.VERTICAL]      = { 412, 384, 323, 295, 267, 239, 211, 183, 155, 150, 178, 206, 234, 229, 201, 173, 145, 117, 89, 35 },
+        [StbRailVariant.HORIZONTAL]    = { 355, 354, 353, 352, 126, 125, 124, 123, 261, 260, 259, 258, 62 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 356, 127 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 122, 61 },
+        [StbRailVariant.UP_TO_LEFT]    = { 262, 63 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 351, 257 },
+        cart = 412,
+      },
+      [17674] = {
+        [StbRailVariant.VERTICAL]      = { 46, 31 },
+        [StbRailVariant.HORIZONTAL]    = { 17, 18, 19, 20, 21 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 16 },
+        [StbRailVariant.UP_TO_LEFT]    = { 61, 22 },
+        cart = 61,
+      },
+      [19692] = {
+        [StbRailVariant.VERTICAL]      = { 200, 185, 170, 155, 129, 114, 80, 65, 37, 22 },
+        [StbRailVariant.HORIZONTAL]    = { 216, 141, 142, 143, 98, 97, 96, 51 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 217, 99 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 140, 50 },
+        [StbRailVariant.UP_TO_LEFT]    = { 144, 52 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 215, 95 },
+        cart = 217,
+      },
+      [19694] = {
+        [StbRailVariant.VERTICAL]      = { 412, 384, 356, 328, 300, 290, 318, 317, 289, 261, 233, 205, 177, 149, 121, 63, 35 },
+        [StbRailVariant.HORIZONTAL]    = { 271, 270, 269, 268, 267, 266, 265, 264, 263, 92 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 272, 93 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 262 },
+        [StbRailVariant.UP_TO_LEFT]    = { 346 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 345, 91 },
+        cart = 412,
+      },
+      [19698] = {
+        [StbRailVariant.VERTICAL]      = { 399, 350, 322, 294, 266, 238, 188, 160 },
+        [StbRailVariant.HORIZONTAL]    = { 372, 373, 374, 375, 376, 377, 211, 212, 213, 214, 215, 133, 134, 135, 136, 137, 138 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 371, 210, 132 },
+        [StbRailVariant.UP_TO_LEFT]    = { 378, 216 },
+        cart = 399,
+      },
+    }
+    local fiendFolioReloaded = XMLData.GetEntryByName(XMLNode.MOD, 'Damn, Fiend Folio: RELOADED')
+    local fiendFolioReheated = XMLData.GetEntryByName(XMLNode.MOD, 'Damn, Fiend Folio Reheated')
+    if fiendFolioReloaded and fiendFolioReloaded.enabled == 'true' then
+      for k, v in pairs({
+                         [17649] = { 17888 },
+                         [17651] = { 17890 },
+                         [17500] = { 17799 },
+                         [17502] = { 17801 },
+                         [17506] = { 17805 },
+                         [17510] = { 17809 },
+                         [17664] = { 17903 },
+                         [17666] = { 17905, 17907, 17909 },
+                         [17668] = { 17911 },
+                         [17660] = { 17899 },
+                         [17674] = { 17917 },
+                         [19692] = { 20452 },
+                         [19694] = { 20454 },
+                         [19698] = { 20458 },
+                         [10010] = { 17886, 17887, 17889, 20451, 17803, 17901, 20456 },
+                         [10072] = { 17895, 17897 },
+                         [10100] = { 17807, 17913, 17915 },
+                       })
+      do
+        for _, w in ipairs(v) do
+          mod.roomData[w] = fiendFolioRoomData[k] or mod.roomData[k]
+        end
+      end
+    elseif fiendFolioReheated and fiendFolioReheated.enabled == 'true' then
+      for k, v in pairs({
+                         [0]     = { 17649, 17651, 17500, 17502, 17506, 17510, 17664, 17666, 17668, 17660, 17674, 19692, 19694, 19698 },
+                         [10010] = { 17647, 17648, 17650, 19691, 17504, 17662, 19696 },
+                         [10072] = { 17656, 17658 },
+                         [10100] = { 17508, 17670, 17672 },
+                       })
+      do
+        for _, w in ipairs(v) do
+          mod.roomData[w] = k == 0 and fiendFolioRoomData[w] or mod.roomData[k]
+        end
+      end
+    end
+    
+    -- rooms galore (82xx/83xx)
+    -- rooms galore definitive edition (82xx)
+    local roomsGaloreRoomData = {
+      -- orig rooms galore ids
+      [8278] = {
+        [StbRailVariant.VERTICAL]  = { 112, 97, 82, 52, 37, 22 },
+        [StbRailVariant.CROSSROAD] = { 67 },
+        cart = 112,
+      },
+      [8284] = {
+        [StbRailVariant.VERTICAL]     = { 412, 351, 323, 295, 267, 239, 211, 147, 119, 91, 63, 35 },
+        [StbRailVariant.HORIZONTAL]   = { 383, 382, 381, 380, 182, 181, 180, 179, 178, 177, 176 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 384, 183 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 379, 175 },
+        cart = 412,
+      },
+      [8286] = {
+        [StbRailVariant.VERTICAL]      = { 112, 85, 70, 55, 22 },
+        [StbRailVariant.HORIZONTAL]    = { 98, 99, 39, 38 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 40 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 97 },
+        [StbRailVariant.UP_TO_LEFT]    = { 100 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 37 },
+        cart = 112,
+      },
+      [8288] = {
+        [StbRailVariant.VERTICAL]      = { 399, 371, 343, 315, 287, 293, 321, 328, 300, 272, 244, 216, 188 },
+        [StbRailVariant.HORIZONTAL]    = { 260, 261, 262, 263, 264, 350, 351, 352, 353, 354, 355, 161, 162, 163, 137, 138 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 265 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 259, 160, 136 },
+        [StbRailVariant.UP_TO_LEFT]    = { 356, 164 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 349 },
+        cart = 399,
+      },
+      [8294] = {
+        [StbRailVariant.VERTICAL]      = { 412, 357, 329, 301, 237, 209, 151, 123, 63, 35 },
+        [StbRailVariant.HORIZONTAL]    = { 272, 271, 270, 269, 268, 267, 266, 180, 94, 93, 92 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 273, 181, 95 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 384 },
+        [StbRailVariant.UP_TO_LEFT]    = { 385 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 265, 179, 91 },
+        cart = 412,
+      },
+      [8296] = {
+        [StbRailVariant.VERTICAL]      = { 399, 359, 331, 303, 275, 247, 219, 191, 163, 135, 107, 110 },
+        [StbRailVariant.HORIZONTAL]    = { 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 80, 81 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 82 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 371, 79 },
+        [StbRailVariant.UP_TO_LEFT]    = { 387 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 138 },
+        cart = 399,
+      },
+      [8300] = {
+        [StbRailVariant.VERTICAL]   = { 52, 37, 22 },
+        [StbRailVariant.HORIZONTAL] = { 61, 62, 64, 65, 66 },
+        [StbRailVariant.CROSSROAD]  = { 63 },
+        [StbRailVariant.UP_TO_LEFT] = { 67 },
+        cart = 61,
+      },
+      [8304] = {
+        [StbRailVariant.HORIZONTAL]    = { 113, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 138 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 109 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 86 },
+        [StbRailVariant.UP_TO_LEFT]    = { 114 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 137 },
+        cart = 113,
+      },
+      [8306] = {
+        [StbRailVariant.VERTICAL]     = { 54, 22 },
+        [StbRailVariant.HORIZONTAL]   = { 61, 62, 63, 64, 65, 66, 67, 68, 38 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 39 },
+        [StbRailVariant.UP_TO_LEFT]   = { 69 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 37 },
+        cart = 61,
+      },
+      [8308] = {
+        [StbRailVariant.VERTICAL]     = { 412, 384, 288, 260, 232, 204, 176, 148, 120, 92, 35 },
+        [StbRailVariant.HORIZONTAL]   = { 355, 325, 324, 323, 322, 321, 320, 319, 318, 317 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 356, 326, 64 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 354, 316, 63 },
+        cart = 412,
+      },
+      -- definitive edition ids
+      d8254 = {
+        [StbRailVariant.VERTICAL]      = { 118, 121, 127, 130 },
+        [StbRailVariant.HORIZONTAL]    = { 113, 87, 88, 89, 147, 148, 94, 95, 96, 97, 98, 156, 157, 103, 104, 105, 135, 136, 137, 138 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 90, 99, 106 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 86, 93, 102 },
+        [StbRailVariant.UP_TO_LEFT]    = { 114, 149, 158 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 146, 155, 134 },
+        cart = 113,
+      },
+      d8262 = {
+        [StbRailVariant.VERTICAL]     = { 412, 384, 327, 299, 271, 175, 147, 119, 91, 63, 35 },
+        [StbRailVariant.HORIZONTAL]   = { 242, 241, 211, 210, 209, 208, 207, 206, 205, 204 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 356, 243, 212 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 355, 240, 203 },
+        cart = 412,
+      },
+      d8266 = {
+        [StbRailVariant.VERTICAL]      = { 412, 342, 314, 286, 258, 230, 202, 174, 146, 118, 90, 35 },
+        [StbRailVariant.HORIZONTAL]    = { 383, 382, 381, 380, 379, 378, 377, 376, 375, 374, 373, 372, 371 },
+        [StbRailVariant.DOWN_TO_LEFT]  = { 384 },
+        [StbRailVariant.DOWN_TO_RIGHT] = { 62 },
+        [StbRailVariant.UP_TO_LEFT]    = { 63 },
+        [StbRailVariant.UP_TO_RIGHT]   = { 370 },
+        cart = 412,
+      },
+      d8270 = {
+        [StbRailVariant.VERTICAL]   = { 52, 37, 22 },
+        [StbRailVariant.HORIZONTAL] = { 61, 62, 63, 65, 66 },
+        [StbRailVariant.CROSSROAD]  = { 64 },
+        [StbRailVariant.UP_TO_LEFT] = { 67 },
+        cart = 61,
+      },
+      d8276 = {
+        [StbRailVariant.VERTICAL]     = { 53, 38 },
+        [StbRailVariant.HORIZONTAL]   = { 61, 62, 63, 64, 65, 66, 67 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 23 },
+        [StbRailVariant.UP_TO_LEFT]   = { 68 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 22 },
+        cart = 61,
+      },
+    }
+    local roomsGaloreDefinitive = XMLData.GetEntryByName(XMLNode.MOD, '[REP+] Rooms Galore! Definitive Edition')
+    local roomsGalore = XMLData.GetEntryByName(XMLNode.MOD, 'Rooms Galore!')
+    if roomsGaloreDefinitive and roomsGaloreDefinitive.enabled == 'true' then
+      for k, v in pairs({
+                         [0]     = { 'd8254', 'd8262', 'd8266', 'd8270', 'd8276' },
+                         [8278]  = { 8240, 8278 },
+                         [8284]  = { 8248 },
+                         [8286]  = { 8250 },
+                         [8288]  = { 8252 },
+                         [8294]  = { 8260 },
+                         [8296]  = { 8264 },
+                         [10010] = { 8238, 8239, 8258, 8268 },
+                         [10072] = { 8256, 8272, 8274 },
+                         [10156] = { 8246 },
+                       })
+      do
+        for _, w in ipairs(v) do
+          if k == 0 then
+            mod.roomData[tonumber(string.sub(w, 2))] = roomsGaloreRoomData[w]
+          else
+            mod.roomData[w] = roomsGaloreRoomData[k] or mod.roomData[k]
+          end
+        end
+      end
+    elseif roomsGalore and roomsGalore.enabled == 'true' then
+      for k, v in pairs({
+                         [0]     = { 8278, 8284, 8286, 8288, 8294, 8296, 8300, 8304, 8306, 8308 },
+                         [10010] = { 8276, 8277, 8292, 8298 },
+                         [10072] = { 8290, 8302 },
+                         [10156] = { 8282 },
+                       })
+      do
+        for _, w in ipairs(v) do
+          mod.roomData[w] = k == 0 and roomsGaloreRoomData[w] or mod.roomData[k]
+        end
+      end
+    end
+    
+    -- rooms galore fiendish edition (60xxx)
+    local roomsGaloreFiendish = XMLData.GetEntryByName(XMLNode.MOD, 'Rooms Galore! Fiendish Edition')
+    if roomsGaloreFiendish and roomsGaloreFiendish.enabled == 'true' then
+      mod.roomData[60119] = {
+        [StbRailVariant.VERTICAL]     = { 55, 22 },
+        [StbRailVariant.HORIZONTAL]   = { 61, 62, 63, 64, 65, 66, 67, 68, 69, 39, 38 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 40 },
+        [StbRailVariant.UP_TO_LEFT]   = { 70 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 37 },
+        cart = 61,
+      }
+      mod.roomData[60123] = {
+        [StbRailVariant.VERTICAL]     = { 381, 353, 325, 265, 237, 179, 151, 91, 63, 35 },
+        [StbRailVariant.HORIZONTAL]   = { 411, 410, 296, 295, 294, 208, 122, 121, 120 },
+        [StbRailVariant.DOWN_TO_LEFT] = { 412, 297, 209, 123 },
+        [StbRailVariant.UP_TO_RIGHT]  = { 409, 293, 207, 119 },
+        cart = 412,
+      }
+      mod.roomData[60121] = roomsGaloreRoomData[8278]
+    end
+    
+    mod.minecartEnterFrame = mod:getMinecartEnterFrame()
+  end
   
   function mod:onGameStart()
     if mod:HasData() then
@@ -555,10 +675,12 @@ if REPENTOGON then
         if type(state.speed) == 'string' and mod:getSpeedsIdx(state.speed) > 0 then
           mod.state.speed = state.speed
         end
+        if type(state.includeModdedRooms) == 'boolean' then
+          mod.state.includeModdedRooms = state.includeModdedRooms
+        end
       end
     end
     
-    mod.minecartEnterFrame = mod:getMinecartEnterFrame()
     mod.onGameStartHasRun = true
     mod:onNewRoom()
   end
@@ -586,7 +708,7 @@ if REPENTOGON then
     if mod:isSecretEntrance() then
       mod:updateMinecartSpeed()
     elseif mod:isMineshaftRoom() and mod.minecartInPrevRoom then
-      local roomData = mod.roomData[roomDesc.Data.Variant] -- OriginalVariant
+      local roomData = mod:getRoomData(roomDesc.Data)
       if roomData then
         mod:addRails(roomData)
         
@@ -639,7 +761,7 @@ if REPENTOGON then
         end
       end
     elseif mod:isMineshaftRoomPreview() and mod.mineshaftRoomPreview then
-      local roomData = mod.roomData[roomDesc.Data.Variant]
+      local roomData = mod:getRoomData(roomDesc.Data)
       if roomData then
         mod:addRails(roomData)
         
@@ -700,13 +822,13 @@ if REPENTOGON then
        roomConfig.Type == RoomType.ROOM_DEFAULT and
        (roomConfig.Subtype == RoomSubType.MINESHAFT_LOBBY or roomConfig.Subtype == RoomSubType.MINESHAFT_ROOM)
     then
-      if not mod.roomData[roomConfig.Variant] then
+      if not mod:getRoomData(roomConfig) then
         local rng = RNG(seed, mod.rngShiftIdx)
-        for i = 1, 100 do
+        for i = 1, 500 do
           local newRoomConfig = RoomConfigHolder.GetRandomRoom(rng:Next(), true, roomConfig.StageID, roomConfig.Type, roomConfig.Shape, 0, -1, 0, 10, slot:DoorMask(), roomConfig.Subtype, -1)
           if not newRoomConfig then
             return nil
-          elseif mod.roomData[newRoomConfig.Variant] then
+          elseif mod:getRoomData(newRoomConfig) then
             return newRoomConfig
           end
         end
@@ -745,7 +867,7 @@ if REPENTOGON then
        npc.Variant == 10 and
        npc.State == NpcState.STATE_MOVE
     then
-      local roomData = mod.roomData[roomDesc.Data.Variant]
+      local roomData = mod:getRoomData(roomDesc.Data)
       if roomData then
         if room:GetGridIndex(npc.Position) == roomData.cart and mod:atLeftDoor(roomData.cart) then
           if npc.V1.X == 0 then
@@ -770,6 +892,15 @@ if REPENTOGON then
   end
   
   Console.RegisterCommand('less-broken-mineshaft', 'Wrapper for goto, use with d.xxxxx', 'Wrapper for goto, use with d.xxxxx', false, AutocompleteType.GOTO)
+  
+  function mod:getRoomData(roomConfig)
+    if roomConfig and roomConfig.Variant and roomConfig.Variant == roomConfig.OriginalVariant and
+       ((roomConfig.Variant >= 10000 and roomConfig.Variant < 11000) or mod.state.includeModdedRooms)
+    then
+      return mod.roomData[roomConfig.Variant]
+    end
+    return nil
+  end
   
   function mod:updateMinecartSpeed()
     for _, v in ipairs(Isaac.FindByType(EntityType.ENTITY_MINECART, 10, -1, false, false)) do
@@ -967,9 +1098,28 @@ if REPENTOGON then
         Info = { 'Default: normal' }
       }
     )
+    ModConfigMenu.AddSetting(
+      category,
+      'Settings',
+      {
+        Type = ModConfigMenu.OptionType.BOOLEAN,
+        CurrentSetting = function()
+          return mod.state.includeModdedRooms
+        end,
+        Display = function()
+          return 'Modded room support: ' .. (mod.state.includeModdedRooms and 'on' or 'off')
+        end,
+        OnChange = function(b)
+          mod.state.includeModdedRooms = b
+          mod:save()
+        end,
+        Info = { 'Turn this off if you\'re running into issues with rooms from supported mods' }
+      }
+    )
   end
   -- end ModConfigMenu --
   
+  mod:AddCallback(ModCallbacks.MC_POST_MODS_LOADED, mod.onModsLoaded)
   mod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, mod.onGameStart)
   mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, mod.onGameExit)
   mod:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, mod.onNewRoom)
